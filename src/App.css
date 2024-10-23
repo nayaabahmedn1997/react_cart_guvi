@@ -9,3 +9,16 @@
   width:  100%;
 
 }
+.btn-danger
+{
+  color: white;
+  outline: none;
+  border: none;
+}
+.btn-danger:hover
+{
+  color: white;
+  outline: none;
+  border: none;
+  background-color: red;
+}

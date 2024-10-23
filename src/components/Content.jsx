@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from './Card'
 
-export const Content = ({data}) => {
+export const Content = ({data, cartInfo, setCartInfo}) => {
     return (
         <div>
             <section className="py-5">
@@ -11,7 +11,13 @@ export const Content = ({data}) => {
                         {
                             data.map((cardData, index)=>{
                                 return (
-                                    <Card  cardInfo={cardData}/>
+                                    <Card  
+                                    key = {index}
+                                    keyValue = {index}
+                                    cardInfo= {cardData}
+                                    cartInfo={cartInfo}
+                                    setCartInfo= {setCartInfo}
+                                    />
                                 )
                             })
 }
